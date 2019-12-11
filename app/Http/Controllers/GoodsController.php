@@ -8,6 +8,7 @@ class GoodsController extends Controller
 {
     public function add(Request $request)
     {
+        dd(1111);
         $data=$request->all();
         dd($data);
         $res=Goods::insert($data);
